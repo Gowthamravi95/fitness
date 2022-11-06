@@ -1,0 +1,713 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+/* defaut css lines  */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width:80%;
+    margin: auto;
+}
+
+
+/* top bar in navigation  */
+
+.top-bar{
+    background-color: #223a66;
+    height:7vh
+}
+.top-bar-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.top-bar-grid i{
+    color:white;
+    font-size: 0.8rem;
+    line-height: 7vh;
+}
+.top-bar-grid span{
+    color:white;
+    padding-left: 5px;
+    font-size: 0.9rem;
+    line-height: 7vh;
+}
+.top-bar-left-flex{
+    display: flex;
+}
+.phone .number{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.phone .text{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.address{
+    padding-left: 40px;
+}
+.phone{
+    text-align: right;
+}
+
+
+/* navlinks in nav bar  */
+
+.nav-bar{
+    height: 14vh;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.nav-links ul{
+    display: flex;
+    line-height: 14vh;
+    justify-content: space-evenly;
+}
+
+.logo{
+    padding-top: 18px;
+}
+.nav-links ul li a{
+    color:black;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.nav-links i{
+    font-size: 0.8rem;
+    padding-left: 10px;
+}
+.dropdown{
+    display: none;
+}
+.nav-links li a:hover{
+    color:#e12454;
+}
+.nav-links ul li:first-child a{
+    color:#e12454
+}
+.logo label{
+    font-size: 1.5rem;
+    color: #e12454;
+    padding-top: 18px;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+/* hero section css starts  */
+
+.hero{
+    background-image: url(assets/images/slider-bg-1.jpg);
+    height:85vh;
+    background-size: cover;
+}
+.hero-content{
+    padding-top: 10vh;
+    width: 40%;
+    margin-left: 10%;
+}
+.hero-content h3{
+    color: #869eb2;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+.hero-content h3::before{
+    content: "";
+    background-color: #e12454;
+    height: 4px;
+    width: 8%;
+    position: absolute;
+    top:-3.5vh;
+}
+.hero-content h1{
+    font-size: 3.5rem;
+    color: #223a66;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.hero-content p{
+    font-size: 1rem;
+    color: #869eb2;
+    word-spacing: 2px;
+    line-height: 4vh;
+    padding-right: 50px;
+}
+button{
+    all:unset;
+    font-size: 0.9rem;
+    background-color: #e12454;
+    padding: 12px 0px 12px 30px;
+    border-radius: 50px;
+    color: white;
+    margin-top: 3vh;
+}
+button:hover{
+    background-color: #223a66;
+}
+button i{
+    padding: 0px 30px;
+}
+.hero-contenth3,h1,p{
+    margin-top: 2vh;
+
+}
+
+
+/* card section css starts  */
+
+.card-content i{
+    font-size: 3.2rem;
+    color: #223a66;
+}
+.card-content h3{
+    padding-top: 30px;
+    color: #869eb2;
+    font-size: 1rem;
+}
+.card-content h2{
+    color: #223a66;
+    font-size: 1.3rem;
+}
+.card-content p{
+    color: #869eb2;
+    font-size: 0.9rem;
+}
+.card-content table{
+    color: #869eb2;
+    font-size: 1rem;
+    border-collapse: collapse;
+    width:100%;
+}
+.card-content table tr{
+    border-bottom: 0.01rem solid #869eb2;
+    
+}
+.card-content table td{
+    padding: 10px;
+}
+.card-content table .td-right{
+    text-align: right;
+}
+
+.card-content button{
+    padding-right: 30px;
+}
+.card{
+    line-height: 4vh;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 15px 1px #869eb2;
+    margin-bottom: 5vh;
+}
+.cards{
+    margin-top: -10vh;
+}
+.card-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2%;
+}
+
+/* care section css starts  */
+
+.care{
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 50px;
+    margin-bottom: 10vh;
+    align-items: center;
+}
+.image-content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 20px;
+}
+.image-content img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.image-content img:last-child{
+    grid-column-start: 2;
+grid-row-start: 1;
+grid-row-end: 3;  
+padding-top: 20%;
+    height:80%
+}
+.image-content img:nth-child(2){
+    grid-row-start: 2;
+}
+.text-content h2{
+    font-size: 3rem;
+    color: #223a66;
+    font-weight: 700;
+}
+
+.text-content p{
+    font-size: 1rem;
+    color: #869eb2;
+    word-spacing: 2px;
+    line-height: 4vh;
+    padding-right: 50px;
+}
+
+
+
+/* count section css lines  */
+  
+.count .image img{
+    width:100%;
+    height: 30vh ;
+    object-fit: cover;
+}
+.count .image,.count{
+    position: relative; 
+
+}
+.count .image::before{
+    content: "";
+    width:100%;
+    height: 30vh ;
+    position: absolute;
+    background-color: rgba(34, 58, 102, 0.95);
+    top:0;
+}
+.count-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: absolute;
+    top:0;
+    width: 100%;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    height: 30vh;
+}
+.count-content span{
+    font-size: 5rem;
+    color: white;
+    font-weight: 900;
+}
+.count-content .count1{
+    text-align: center;
+}
+
+.count-content .count1 p{
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.06);
+    margin-bottom: -45px;
+}
+
+/* footer section css code lines  */
+.footer{
+    background-color: #f4f9fc;
+    margin-top: 8vh;
+    padding-top: 13vh;
+}
+.footer-top{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:5vh;
+    line-height: 4vh;
+}
+.social p{
+    color:#6F8BA4 ;
+    padding-bottom: 30px;
+}
+.social a{
+    background-color:#6F8BA4;
+    padding: 15px;
+    border-radius: 50px;
+margin-right: 15px;
+}
+.social a i{
+    color: white;
+}
+.footer h2{
+    position: relative;
+    color: #223a66;
+    margin-bottom: 40px;
+}
+
+.footer h2::after{
+    content: "";
+    background-color: #e12454;
+    height: 4px;
+    width: 15%;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.department a,.support a,.touch li{
+    color: #6F8BA4;
+    line-height: 5vh;
+}
+.touch a{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.touch i{
+    padding-right:20px;
+}
+.footer-bottom p{
+    color: #6F8BA4;
+}
+.footer-bottom span{
+    color: black;
+    font-size: 1.2rem;
+}
+.footer-bottom input{
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    width: 500px;
+}
+.footer-bottom{
+    display: flex;
+justify-content: space-between;
+padding: 20px 0;
+}
+.footer-bottom button{
+    padding-right: 30px;
+    position: absolute;
+    top:6px;
+    right:10px;
+}
+.subscribe{
+    position: relative;
+
+}
+
+
+.arrow a{
+   font-size: 2.5rem;
+   padding: 0px 5px;
+   border-radius: 50%;
+   background-color: #e12454;
+   color: white;
+   position: fixed;
+   bottom: 2vh;
+   right:2vh;
+}
+.arrow a:hover{
+    background-color: #223a66;
+}
+
+
+
+
+
+/* contact hero section in contact page css code lines  */
+
+
+
+.contact-hero{
+    background: url(assets/images/22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:52vh;
+    position: relative;
+}
+.contact-hero::before{
+content: "";
+    background-color: #223a66;
+    width:100%;
+    height: 52vh;
+    position: absolute;
+    top:0;
+    opacity: 0.9;
+}
+.contact-hero-content{
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top:30%;
+
+}
+.contact-hero-content h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* contact card section css code lines  */
+
+.contact-card{
+line-height: 5vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap:3vh;
+text-align: center;
+margin-top: 8vh;
+margin-bottom: 8vh;
+}
+.contact-card1{
+    border: 4px solid rgba(196, 216, 248, 0.5);
+    padding: 5vh 0;
+}
+.contact-card1 i{
+font-size: 3rem;
+color: #e12454;
+
+}
+.contact-card1 p{
+color: #869eb2;
+}
+
+/* contact form section css code lines  */
+
+.contact-form span{
+    font-size: 2rem;
+    color: #223a66;
+    font-weight: 700;
+    position: relative;
+
+}
+.contact-form p{
+    font-size: 1rem;
+    color: #869eb2;
+    word-spacing: 2px;
+    padding: 6vh 0;
+}
+.contact-form{
+    text-align: center;
+    padding-bottom: 10vh;
+}
+.contact-form span::after{
+    content: "";
+    background-color: #e12454;
+    height: 4px;
+    width: 25%;
+    position: absolute;
+    bottom: -20px;
+    left: 40%;
+}
+
+.contact-form input{
+    background-color:#f4f9fc;
+    border: 1px solid #EEF2F6;
+    height: 60px;
+    padding-left: 20px;
+}
+.form-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.form-middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.contact-form textarea{
+    background-color:#f4f9fc;
+    border: 1px solid #EEF2F6;
+    width:100%;
+    font-size: 1rem;
+}
+
+.map iframe{
+    width:100%;
+    height:60vh;
+}
+
+/* about hero section in contact page css code lines  */
+
+
+
+.about-hero{
+    background: url(assets/images/22.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:52vh;
+    position: relative;
+}
+.about-hero::before{
+content: "";
+    background-color: #223a66;
+    width:100%;
+    height: 52vh;
+    position: absolute;
+    top:0;
+    opacity: 0.9;
+}
+.about-hero-content{
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top:30%;
+
+}
+.about-hero-content h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about-content h2{
+    font-size: 3rem;
+    color: #223a66;
+    font-weight: 700;
+    padding-right: 50px;
+}
+.about-content p, .about-card p{
+    font-size: 1rem;
+    color: #869eb2;
+    word-spacing: 2px;
+    line-height: 4vh;
+}
+.about-content{
+    display: flex;
+    padding: 10vh 0;
+}
+
+/* about card section css code lines  */
+
+.about-card{
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.about-card img{
+    width: 300px;
+    height: 200px;
+}
+.about-card h3{
+    text-transform:capitalize;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1080px) {
+
+    .card-content{
+        display: block;
+    }
+    .count-content{
+        grid-template-columns: repeat(2,1fr);
+        height: 60vh;
+
+        }
+        .count .image::before,.count,.count .image img{
+            height: 60vh;
+        }
+        .about-card{
+          
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+    
+}
+
+
+
+
+@media screen and (max-width:991px) {
+    .top-bar-grid{
+        display: block;
+    }
+    .top-bar{
+        height: 14vh;
+    }
+    .phone{
+        text-align: left;
+    }
+    .nav-links{
+        display: block;
+        position: relative;
+        z-index: -1;    
+    }
+    .nav-links ul{
+        display: block;
+        line-height: 8vh;
+        text-align: center;
+        
+    }
+    .contact-hero{
+        transition: all 0.5s ease-in-out;
+
+    }
+    #check:checked ~.hero-content,#check:checked ~.contact-hero{
+        margin-top: 53vh;
+        
+    }
+    .logo:hover .nav-links{
+        display: block;
+
+    }
+    .nav{
+        display: block;
+    }
+    .logo label{
+        display: block;
+        text-align: right;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero{
+        background-image: none;
+    }
+    .hero-content{
+        width: 85%;
+        transition: all 0.5s ease-in-out;
+        background-color: white;
+    }
+    .care{
+        display: block;
+    }
+    .image-content{
+    margin-bottom: 20vh;
+    }   
+    .footer-top{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-bottom{
+        display: block;
+    }
+    .contact-card{
+        grid-template-columns: 1fr;
+    }
+    .about-content{
+        display: block;
+    }
+    .about-card{
+          
+        grid-template-columns: 1fr;
+        
+    }
+    .form-top{
+        grid-template-columns: 1fr;
+    }
+    .form-middle{
+        grid-template-columns: 1fr;
+    }
+}
